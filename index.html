@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megaria Piano Studio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffeb3b;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: #ffeb3b;
+            padding-top: 40px;
+            position: fixed;
+            height: 100%;
+            border-right: 2px solid #d4c200;
+        }
+
+        .sidebar h2 {
+            color: #222;
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 0 15px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #222;
+            text-decoration: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #f5dd00;
+        }
+
+        .content {
+            margin-left: 220px;
+            width: calc(100% - 220px);
+            padding: 40px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .video-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .video-card {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+            max-width: 560px;
+        }
+
+        .video-card h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        iframe {
+            border: none;
+            border-radius: 8px;
+        }
+
+        section {
+            margin-top: 80px;
+        }
+
+        section h2 {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+
+            body {
+                flex-direction: column;
+            }
+
+            .content {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2>Megaria Piano Studio</h2>
+
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main class="content">
+
+        <div class="hero">
+            <h1>Megaria Piano Studio</h1>
+            <p>Piano lessons, performance, and musical development.</p>
+        </div>
+
+        <div class="video-section">
+
+            <div class="video-card">
+                <h3>Performance Video</h3>
+
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/JRCbvf8w7BA"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+            <div class="video-card">
+                <h3>Performance Video</h3>
+
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/VAVt9ZtAkmc"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                Welcome to Megaria Piano Studio. We provide engaging piano
+                instruction for students of all ages and skill levels.
+            </p>
+        </section>
+
+        <section id="courses">
+            <h2>Courses</h2>
+            <p>
+                Beginner, intermediate, and advanced piano courses,
+                including examination preparation and performance coaching.
+            </p>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <p>
+                Private lessons, accompaniment, performance preparation,
+                music theory tutoring, and online instruction.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                Email: your-email@example.com
+            </p>
+        </section>
+
+    </main>
+
+</body>
+</html>
