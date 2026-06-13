@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Megaria Piano Studio</title>
+    <title>Mega Piano Studio</title>
 
     <style>
         * {
@@ -11,28 +11,33 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        
+        body, h1, h2, h3, p, a {
+            font-family: "Times New Roman", Times, serif;
+        }
         body {
-            font-family: Arial, sans-serif;
-            background-color: #ffeb3b;
+            background-color: #ffd145;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .page-wrapper {
             display: flex;
             min-height: 100vh;
         }
 
         .sidebar {
             width: 220px;
-            background-color: #ffeb3b;
+            background-color: #ffd145;
             padding-top: 40px;
-            position: fixed;
-            height: 100%;
             border-right: 2px solid #d4c200;
+            flex-shrink: 0;
         }
 
         .sidebar h2 {
-            color: #222;
+            margin-top: 10px;
+            margin-bottom: 20px;
             text-align: center;
-            margin-bottom: 40px;
-            padding: 0 15px;
         }
 
         .sidebar a {
@@ -41,16 +46,24 @@
             text-decoration: none;
             padding: 15px 25px;
             font-size: 18px;
-            transition: background-color 0.3s;
         }
 
-        .sidebar a:hover {
-            background-color: #f5dd00;
+        .sidebar-image {
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar-image img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #d4c200;
         }
 
         .content {
-            margin-left: 220px;
-            width: calc(100% - 220px);
+            flex: 1;
             padding: 40px;
         }
 
@@ -60,12 +73,12 @@
         }
 
         .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 15px;
+            font-size: 5rem;
+            font-weight: normal;
+            letter-spacing: 1px;
         }
-
         .hero p {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
 
         .video-section {
@@ -121,19 +134,25 @@
 </head>
 <body>
 
+<div class="page-wrapper">
+
     <nav class="sidebar">
-        <h2>Megaria Piano Studio</h2>
+
+        <div class="sidebar-image">
+            <img src="mp.png" alt="Mega Piano Studio">
+        </div>
 
         <a href="about.html">About</a>
         <a href="courses.html">Courses</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
+
     </nav>
 
     <main class="content">
 
         <div class="hero">
-            <h1>Megaria Piano Studio</h1>
+            <h1>Mega Piano Studio</h1>
             <p>Piano lessons, performance, and musical development.</p>
         </div>
 
@@ -141,66 +160,28 @@
 
             <div class="video-card">
                 <h3>Performance Video</h3>
-
-                <iframe
-                    width="560"
-                    height="315"
+                <iframe width="560" height="315"
                     src="https://www.youtube.com/embed/JRCbvf8w7BA"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allowfullscreen>
-                </iframe>
-
+                    allowfullscreen></iframe>
             </div>
 
             <div class="video-card">
                 <h3>Performance Video</h3>
-
-                <iframe
-                    width="560"
-                    height="315"
+                <iframe width="560" height="315"
                     src="https://www.youtube.com/embed/VAVt9ZtAkmc"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allowfullscreen>
-                </iframe>
-
+                    allowfullscreen></iframe>
             </div>
 
         </div>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>
-                Welcome to Megaria Piano Studio. We provide engaging piano
-                instruction for students of all ages and skill levels.
-            </p>
-        </section>
-
-        <section id="courses">
-            <h2>Courses</h2>
-            <p>
-                Beginner, intermediate, and advanced piano courses,
-                including examination preparation and performance coaching.
-            </p>
-        </section>
-
-        <section id="services">
-            <h2>Services</h2>
-            <p>
-                Private lessons, accompaniment, performance preparation,
-                music theory tutoring, and online instruction.
-            </p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>
-                Email: your-email@example.com
-            </p>
+        <section id="welcome">
+            <h2>Welcome to Mega Piano Studio</h2>
+            <p>...</p>
         </section>
 
     </main>
+
+</div>
 
 </body>
 </html>
