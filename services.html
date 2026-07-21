@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Piano Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body, h1, h2, h3, p, a {
+            font-family: "Times New Roman", Times, serif;
+        }
+        body {
+            background-color: #ffd145;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .page-wrapper {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: #ffd145;
+            padding-top: 40px;
+            border-right: 2px solid #d4c200;
+            flex-shrink: 0;
+        }
+
+        .sidebar h2 {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #222;
+            text-decoration: none;
+            padding: 15px 25px;
+            font-size: 18px;
+        }
+
+        .sidebar-image {
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar-image img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #d4c200;
+        }
+
+        .content {
+            flex: 1;
+            padding: 40px;
+        }
+        .hero {
+            margin-bottom: 50px;
+            padding: 40px;
+            margin-left: 10px;
+        }
+
+        .hero h1 {
+            font-family: "Niconne", cursive;
+            font-size: 6rem;
+            text-align: center;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero h3 {
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-align: left;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .hero h4 {
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .video-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .video-card {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+            max-width: 640px;
+        }
+
+        .video-card h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        iframe {
+            border: none;
+            border-radius: 8px;
+        }
+
+        section {
+            margin-top: 80px;
+        }
+
+        section h2 {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+
+            body {
+                flex-direction: column;
+            }
+
+            .content {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+
+        .contact-banner {
+            margin-top: 80px;
+            padding: 50px;
+            background: #f5f5f5;
+            border-top: 3px solid #d4c200;
+        }
+
+        .contact-banner h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2rem;
+        }
+
+        .contact-banner form {
+            max-width: 700px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-banner input,
+        .contact-banner textarea {
+            padding: 15px;
+            font-size: 1rem;
+            border: 1px solid #bbb;
+            border-radius: 8px;
+            font-family: inherit;
+        }
+
+        .contact-banner textarea {
+            resize: vertical;
+        }
+
+        .contact-banner button {
+            align-self: center;
+            padding: 14px 35px;
+            font-size: 1.1rem;
+            background: #ffd145;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .contact-banner button:hover {
+            background: #f2c300;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+    <nav class="sidebar">
+
+        <div class="sidebar-image">
+        <a href="index.html"><img src="mp.png" alt="Mega Piano Studio"></a>
+        </div>
+        <a href="philosophy.html">Teaching Philosophy</a>
+        <a href="services.html">Courses and Services</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+    <main class="hero">
+        <h1>Mega Piano Studio</h1>
+        <h4>Piano lessons, performance, and musical development.</h4>
+
+        <h2>My services</h2>
+
+        <h3>Piano Lessons and (Group) Theory Lessons</h3>
+        
+        <p>
+            Come and enjoy one-to-one piano lessons at Mega Piano Studio. Here in MP studio, I am committed to providing 
+            lessons and guidance for everyone. Students who wish to take exams, need help with their music elective programme, 
+            or want to learn and make music for leisure and to learn new skills are all welcome! Each lessons will be tailored 
+            to meet your needs.
+        </p>
+        <p>
+            Students will be building their foundations on learning notes recognition through solfeggi, rhythm and ear training. 
+            Most piano lessons in MP Studio also include theory lessons, especially for students who are preparing for graded 
+            exams. The goal is to deepen understanding and connection between the theory and the music that is created. This 
+            not only gives you greater understanding of music but will deepen your enjoyment as well. Needless to say, these 
+            are very important skills for musicians.
+        </p>
+        <p>
+            MP Studio usually takes 3-8 students (Grade 1-5) or 3-5 students (Grade 6-8) per class for group theory lessons. 
+            In a group class, students are always welcome and encouraged to listen and share opinions and experiences among 
+            peers, to work hard and to encourage each other, as well as to learn, appreciate, and enjoy music together with 
+            their peers.
+        </p>
+        <p>
+            Lessons are also available for children between the ages of 4-6. The fees is SGD $50 for 30 minutes.
+        </p>
+        <p>
+            Lessons are available for students who wish to prepare for graded examinations. Lessons fees starts at SGD $60. 
+            Contact MP Studio for more detailed pricing.
+        </p>
+        <p>
+            If you are not sure whether music lessons are for you, MP Studio offers a 20-minute trial lesson at SGD $30.
+        </p>
+
+        <h3>Collaborative Pianist (Accompaniment) service</h3>
+
+        <p>
+            Working in a chamber settings is a magical experience as you get to meet with many other like-minded musicians 
+            (who can turn in to long life friends) and to create beautiful music together. You will have the opportunity of 
+            learning from your fellow musicians as well.
+        </p>
+
+        <p>
+            Apart from piano and theory lessons, MP Studio also offers piano accompaniment services if you are looking for a 
+            pianist for your voice and/or instrumental examinations. Aural (ear) training is also included in every coaching 
+            session.
+        </p>
+
+        <p>
+            MP Studio also provides accompaniment services if you are looking for a pianist for your choir or chamber groups!
+        </p>
+
+        <p>
+            Accompaniment fees starts at $60. Prices depend on grades (if you are preparing for graded exams), events, and the 
+            timeline. Contact MP Studio for more detailed pricing.
+        </p>
+
+        <h3>Music Workshops</h3>
+        
+        <p>
+        </p>
+        <p>
+        </p>
+
+        <section id="contact" class="contact-banner">
+
+            <h2>Get in Touch</h2>
+
+            <p>
+                Interested in piano lessons or have a question? I'd love to hear from you.
+            </p>
+
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="d9a8071b-3550-4b20-9f11-2dbc6dd62039">
+
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your name"
+                    required>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your email"
+                    required>
+
+                <textarea
+                    name="message"
+                    rows="8"
+                    placeholder="Your message"
+                    required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
